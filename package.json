@@ -13,7 +13,6 @@
   "author": "Andrew Bryson <andrewbryson12@gmail.com>",
   "license": "MIT",
   "repository": "git@github.com:brysonandrew/moth.git",
-  "packageManager": "yarn@3.4.1",
   "dependencies": {
     "@babel/runtime": "^7.21.0",
     "@emailjs/browser": "^3.10.0",
