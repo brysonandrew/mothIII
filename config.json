@@ -1,0 +1,41 @@
+{
+  "type": "Config",
+  "favicon": "/images/RDSA-logo-white-700px.jpg",
+  "header": {
+    "title": "Drill Services",
+    "navLinks": [
+      {
+        "type": "Link",
+        "label": "New Arrivals",
+        "url": "/new-arrivals"
+      },
+      {
+        "type": "Link",
+        "label": "Featured",
+        "url": "/featured"
+      },
+      {
+        "type": "Link",
+        "label": "Contact",
+        "url": "/contact"
+      }
+    ]
+  },
+  "footer": {
+    "copyrightText": "© 2024 Drill Services Australia, All rights reserved.",
+    "navLinks": [
+      {
+        "type": "Link",
+        "label": "Contact",
+        "underline": "hover",
+        "url": "/contact"
+      },
+      {
+        "type": "Link",
+        "label": "Reference",
+        "url": "https://preview.themeforest.net/item/cartrek-car-parts-store-shopify-theme/full_screen_preview/47531314?_ga=2.75017499.868874011.1730806352-231211186.1720836603&_gac=1.160564815.1730457006.CjwKCAjw-JG5BhBZEiwAt7JR66SxA14HA4lswkPWHq5VNt6jew0oxtX-gyW_4bYV7eHCgEDPm5lIoxoCRKoQAvD_BwE",
+        "underline": "hover"
+      }
+    ]
+  }
+}

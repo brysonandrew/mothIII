@@ -36,10 +36,9 @@ extend({
 const props = {
   ...BASE_ENEMY_CONFIG,
 };
-const Root = styled.div``;
 
 export const Mite = () => (
-  <Root className="w-screen h-screen">
+  <div className="w-screen h-screen">
     <Canvas
       camera={{
         position: [0, 0, -500],
@@ -53,5 +52,5 @@ export const Mite = () => (
         <_Bug {...props} instance={null} />
       </group>
     </Canvas>
-  </Root>
+  </div>
 );

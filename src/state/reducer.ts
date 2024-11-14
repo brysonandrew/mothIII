@@ -66,7 +66,7 @@ export const reducer = (
       return {
         ...state,
         inventory: nextInventory,
-        xp: state.xp - SHOP_INIT[value] ?? 0,
+        xp: state.xp - SHOP_INIT[value] || 0,
       };
     }
     case "sell": {
@@ -77,7 +77,7 @@ export const reducer = (
       return {
         ...state,
         inventory: nextInventory,
-        xp: state.xp + SHOP_INIT[value] * 0.5 ?? 0,
+        xp: state.xp + SHOP_INIT[value] * 0.5 || 0,
       };
     }
     case "toggle-sound": {

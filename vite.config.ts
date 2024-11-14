@@ -1,8 +1,6 @@
 import { defineConfig } from "vite";
 import paths from "vite-tsconfig-paths";
 import react from "@vitejs/plugin-react";
-import windiCss from "vite-plugin-windicss";
-import viteRestart from "vite-plugin-restart";
 
 export default defineConfig({
   build: {
@@ -11,7 +9,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    windiCss(),
     react({
       jsxImportSource: "@emotion/react",
       babel: {
@@ -19,9 +16,6 @@ export default defineConfig({
       },
     }),
     paths(),
-    viteRestart({
-      restart: "windi.config-*",
-    }),
   ],
   server: {
     port: 3000,

@@ -171,7 +171,7 @@ export const resolveHoursMinsSecondsHumanReadable = (
     }
   }
   if (m) {
-    const delimiter = Boolean(result)
+    const delimiter = result
       ? COMMA_DELIMITER
       : "";
     result += delimiter + resolveText(m, "minute");
@@ -181,7 +181,7 @@ export const resolveHoursMinsSecondsHumanReadable = (
     }
   }
   if (s) {
-    const delimiter = Boolean(result) ? " and " : "";
+    const delimiter = result ? " and " : "";
 
     result += delimiter + resolveText(s, "second");
 
