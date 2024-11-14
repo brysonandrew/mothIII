@@ -24,7 +24,7 @@ export const Middle = () => {
           backdropFilter: "blur(20px)",
         }}
       />
-      <div className="relative flex flex-col items-center p-4 bg-red">
+      <div className="relative flex flex-col items-center p-4 bg-black">
         <div className="flex text-teal-bright px-12">
           <Note note={note} />
         </div>

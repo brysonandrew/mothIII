@@ -24,7 +24,7 @@ export const Controls: FC<TProps> = ({ title, record }) => (
         ([key, value]: [string, string], index: number) => (
           <Fragment key={key}>
             {index !== 0 && <Item className="p-1" />}
-            <Item className="flex items-center justify-between bg-red">
+            <Item className="flex items-center justify-between bg-black">
               <h6>{key}</h6>
               <div className="p-1" />
               <h6>{value}</h6>

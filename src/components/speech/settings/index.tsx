@@ -43,7 +43,7 @@ export const Settings: FC<TProps> = ({ state, update }) => {
     <ul>
       <li>
         <Textarea
-          classValue="text-2xl bg-red-02 shadow-red-08-sm p-1"
+          classValue="text-2xl bg-black-02 shadow-red-08-sm p-1"
           name="text"
           value={text}
           disabled={isPlaying}
@@ -84,7 +84,7 @@ export const Settings: FC<TProps> = ({ state, update }) => {
             </div>
             <Slider
               name={key}
-              className={clsx("bg-red-02", LG_H, "w-full")}
+              className={clsx("bg-black-02", LG_H, "w-full")}
               value={value}
               onChange={handleNumberChange}
               {...(SLIDER_ATTRIBUTES[key] ?? {})}
