@@ -1,0 +1,44 @@
+import { useContext } from "@state/Context";
+import type { TSource } from "@state/types";
+import type { TChildrenElement } from "@t/index";
+import type { FC } from "react";
+import type { Group } from "three";
+
+type TProps = TSource & {
+  children(props: TSource): TChildrenElement;
+};
+export const Enemy: FC<TProps> = ({
+  children,
+  ...props
+}) => {
+  const { dispatch } = useContext();
+
+  const resolveRef = (instance: Group) => {
+    if (!props.instance && instance) {
+      instance.position.x = props.x;
+      instance.position.y = props.y;
+      dispatch({
+        type: "update-enemy",
+        value: {
+          ...props,
+          instance,
+        },
+      });
+    }
+  };
+
+  console.log(props)
+
+  if (props.instance) {
+    return (
+      <group
+        ref={resolveRef}
+        rotation={[0, Math.PI, Math.PI]}
+      >
+        {children(props)}
+      </group>
+    );
+  } else {
+    return null;
+  }
+};

@@ -4,7 +4,6 @@
 *.cpuprofile
 *.local
 *.log
-/.vscode/
 /packages/vite/LICENSE
 dist
 dist-ssr
@@ -17,3 +16,6 @@ TODOs.md
 .yarn/
 .yarnrc.yml
 tsconfig.tsbuildinfo
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
